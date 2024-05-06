@@ -7,7 +7,8 @@ pipeline {
                     url: "https://github.com/AayushkaZ-protean/Demo.git/",
                     branch: "main",
                     changelog: true,
-                    poll: true
+                    poll: true,
+                    gitTool: 'Default'
                 )
             }
         }
@@ -21,7 +22,7 @@ stage("Create artifacts or make changes") {
         stage("Push to Git Repository") {
             steps {
                 withCredentials([gitUsernamePassword(credentialsId: 'aayushkaz-github-token', gitToolName: 'Default')]) {
-                    sh "git push -u origin/main"
+                    sh "git push -u origin main"
                 }
             }
         }
