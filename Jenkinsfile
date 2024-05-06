@@ -21,7 +21,7 @@ stage("Create artifacts or make changes") {
         stage("Push to Git Repository") {
             steps {
                 withCredentials([gitUsernamePassword(credentialsId: 'aayushkaz-github-token', gitToolName: 'Default')]) {
-                    sh "git push -u origin main"
+                    sh "git push -u origin/main"
                 }
             }
         }
