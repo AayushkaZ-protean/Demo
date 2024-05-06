@@ -5,7 +5,7 @@ pipeline {
             steps {
                 git(
                     url: "https://github.com/AayushkaZ-protean/Demo.git",
-                    branch: "master",
+                    branch: "main",
                     changelog: true,
                     poll: true
                 )
