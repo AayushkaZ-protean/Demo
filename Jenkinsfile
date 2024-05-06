@@ -4,7 +4,7 @@ pipeline {
         stage("Clone Git Repository") {
             steps {
                 git(
-                    url: "https://github.com/ssbostan/testrepo.git",
+                    url: "https://github.com/AayushkaZ-protean/Demo.git/",
                     branch: "main",
                     changelog: true,
                     poll: true
@@ -20,7 +20,7 @@ stage("Create artifacts or make changes") {
         }
         stage("Push to Git Repository") {
             steps {
-                withCredentials([gitUsernamePassword(credentialsId: 'ssbostan-github-token', gitToolName: 'Default')]) {
+                withCredentials([gitUsernamePassword(credentialsId: 'aayushkaz-github-token', gitToolName: 'Default')]) {
                     sh "git push -u origin main"
                 }
             }
