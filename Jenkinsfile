@@ -1,14 +1,19 @@
 pipeline {
     agent any
     stages {
-        stage("Clone Git Repository") {
+        stage("Build") {
             steps {
-                git(
-                    url: "https://github.com/AayushkaZ-protean/Demo.git",
-                    branch: "main",
-                    changelog: true,
-                    poll: true
-                )
+                echo "Build stage."
+            }
+        }
+        stage("Test") {
+            steps {
+                echo "Test stage."
+            }
+        }
+        stage("Release") {
+            steps {
+                echo "Release stage."
             }
         }
     }
