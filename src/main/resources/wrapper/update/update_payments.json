@@ -1,0 +1,15 @@
+{
+  "message": {
+    "update_target": "payments",
+    "order": {
+      "id": "e1b05aceba7a4c3da1a066f004a7a547",
+      "payments": [
+        {
+          "time": {
+            "label": "FORECLOSURE"
+          }
+        }
+      ]
+    }
+  }
+}

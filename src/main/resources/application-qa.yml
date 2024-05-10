@@ -1,0 +1,81 @@
+server:
+  port: 7711
+  servlet:
+    context-path: /openfinance
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+  main:
+    allow-circular-references: true
+  datasource:
+    url: jdbc:postgresql://172.21.10.237:5432/open-finance
+    username: postgres
+    password: nsdl1234
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show_sql: true
+    format_sql: true
+
+twilio:
+  account-id: AC11b47d2a6cc635641393b915ea73d356
+  account-secret: 5f2131eb498059845f4366ee6cc11dcc
+  sender-phone-no: +14124246427
+#  account-id: AC0afceef8564c910175e78ac212130249
+#  account-secret: edb5291dd2c01ed5ecfbd48c1517d496
+#  sender-phone-no: +18662410364
+
+lsp:
+  consent-request :
+    token-url: https://dhanaprayoga.fiu.finfactor.in/finsense/API/V1/User/Login
+    encrypt-url: https://dhanaprayoga.fiu.finfactor.in/finsense/API/V1/EncryptLspConsentRequest
+    header:
+      rid: 445e7f8c-22eb-4c09-b6d9-677ef59dbc29
+      channel-id: finsense
+    body:
+      lsp-id : loanseva
+
+
+adaptor:
+  v2:
+    subscriber-url: https://pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp6/
+    base-url: https://pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/
+    subscriber:
+      id: pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp6
+      short-name: adp6
+  filter-lsp:
+    kbl: ondcuatkbl.ignosis.ai
+    dmi: ondctest.refo.dev
+    sequel: ondc.sequelstring.com/seller/protocol
+    praman: pramaan.ondc.org/beta/staging/mock/seller
+    abfl: api.abcscuat.com
+
+
+
+openfinance:
+  thread:
+    common: 50
+  igm:
+    file-upload:
+      base-directory: /home/rv/openfinance-app/igm-issue
+      gcp:
+        project-id: test-ondc
+        bucket-name: openfinance
+  api-key: 58a6bca0-0f0f-4b76-a0e9-0badb6e3b9f9
+
+# Spring Data JPA logging
+logging:
+  level:
+    org:
+      hibernate:
+        #SQL: DEBUG
+        type:
+          descriptor:
+            #sql: TRACE
+
+keyCloak:
+  keycloakURL: https://vapt-test-adaptor.niranjanv12.dev/auth/realms/
+  keyCloakUrlSuffix: /protocol/openid-connect/userinfo

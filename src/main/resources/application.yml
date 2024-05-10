@@ -1,0 +1,12 @@
+spring:
+  profiles:
+#    include:
+#      - buyer-dev
+#      - seller-dev
+    #active: qa
+    active: qa
+#  banner:
+#    location: banners/banner-${beckn.entity.type}-${spring.profiles.active}.txt
+#  output:
+#    ansi:
+#      enabled: always

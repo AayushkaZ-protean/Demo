@@ -1,0 +1,173 @@
+{
+  "categories": [
+    {
+      "category": "FULFILLMENT",
+      "industryCategory": "DISBURSEMENT",
+      "subCategories": [
+        {
+          "subCategory": "Delay in disbursement/not disbursed",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Loan not disbursed by the lender",
+              "subCatCode": 1,
+              "enumValue": "FLM01"
+            }
+          ]
+        },
+        {
+          "subCategory": "Incorrect amount disbursed",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Loan disbursed is incorrect amount",
+              "subCatCode": 2,
+              "enumValue": "FLM02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "PAYMENT",
+      "industryCategory": "PAYMENTS",
+      "subCategories": [
+        {
+          "subCategory": "EMI not executed",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "EMI not deducted",
+              "subCatCode": 1,
+              "enumValue": "PMT01"
+            }
+          ]
+        },
+        {
+          "subCategory": "EMI wrongly executed",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Incorrect amount debited against the EMI",
+              "subCatCode": 2,
+              "enumValue": "PMT02"
+            },
+            {
+              "subSub-Category": "EMI deducted twice",
+              "subCatCode": 3,
+              "enumValue": "PMT03"
+            },
+            {
+              "subSub-Category": "Automatic debits not canceled after loan closure",
+              "subCatCode": 4,
+              "enumValue": "PMT04"
+            }
+          ]
+        },
+        {
+          "subCategory": "EMI payment not getting reflected",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Issues with payment receipts and acknowledgment",
+              "subCatCode": 5,
+              "enumValue": "PMT05"
+            }
+          ]
+        },
+        {
+          "subCategory": "Preclosure/Part payment related",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Unable to prepay or make partpay",
+              "subCatCode": 6,
+              "enumValue": "PMT06"
+            },
+            {
+              "subSub-Category": "Prepayment not reflecting in loan summary",
+              "subCatCode": 7,
+              "enumValue": "PMT07"
+            },
+            {
+              "subSub-Category": "Incorrect fees charged even during the cool-off period",
+              "subCatCode": 8,
+              "enumValue": "PMT08"
+            }
+          ]
+        },
+        {
+          "subCategory": "NOC/Loan completion Related",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Loan completion certificate/NOC not received after full payment",
+              "subCatCode": 9,
+              "enumValue": "PMT09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "INTEREST & CHARGES",
+      "industryCategory": "RoI related issues",
+      "subCategories": [
+        {
+          "subCategory": "RoI related issues",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "RoI related issues",
+              "subCatCode": 9,
+              "enumValue": "PMT09"
+            }
+          ]
+        },
+        {
+          "subCategory": "Fees/Charges related issues",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Interest to be charged as per initial loan offer was 18% however the final loan agreement has 20% mentioned",
+              "subCatCode": 10,
+              "enumValue": "PTM10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "ORDER",
+      "industryCategory": "GENERIC",
+      "subCategories": [
+        {
+          "subCategory": "Cibil Related",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Incorrect info on the credit report",
+              "subCatCode": 1,
+              "enumValue": "ORD01"
+            },
+            {
+              "subSub-Category": "unauthorized inquiry",
+              "subCatCode": 2,
+              "enumValue": "GEN02"
+            },
+            {
+              "subSub-Category": "delay in updating payment information",
+              "subCatCode": 2,
+              "enumValue": "ORD02"
+            }
+          ]
+        },
+        {
+          "subCategory": "Loan Servicing",
+          "subSub-Categories": [
+            {
+              "subSub-Category": "Missing or lost loan documents",
+              "subCatCode": 3,
+              "enumValue": "ORD03"
+            },
+            {
+              "subSub-Category": "Errors in loan agreements or contracts",
+              "subCatCode": 4,
+              "enumValue": "ORD04"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

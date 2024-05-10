@@ -1,0 +1,8 @@
+{
+  "loans": [
+    {
+      "code": "PERSONAL_LOAN",
+      "name": "Personal Loan"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "action": "search",
+    "bap_id": "pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp1",
+    "bap_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp1/",
+    "domain": "ONDC:FIS12",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "timestamp": "2023-12-06T15:58:07.758Z",
+    "transaction_id": "ccd392a8-38a7-4023-ab70-f115a041e1e7",
+    "message_id": "9853ac5e-17c5-4e5d-97fc-743c99f4b1e9",
+    "ttl": "PT10M",
+    "version": "2.0.0"
+  }

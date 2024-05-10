@@ -1,0 +1,12 @@
+{
+  "loans": [
+    {
+      "code": "PERSONAL_LOAN",
+      "name": "Personal Loan"
+    },
+    {
+      "code": "INVOICE_BASED_LOAN",
+      "name": "Invoice Based Loans"
+    }
+  ]
+}

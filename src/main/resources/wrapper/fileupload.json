@@ -1,0 +1,123 @@
+{
+  "issue_request": {
+    "context": {
+      "domain": "ONDC:FIS12",
+      "action": "issue",
+      "bap_id": "pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp1",
+      "bap_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp1/",
+      "bpp_id": "preprodfiu.pirimidtech.com",
+      "bpp_uri": "https://preprodfiu.pirimidtech.com/lender-bridge/ondc/kbl-uat",
+      "transaction_id": "0fbca2b3-eb1d-4e96-b385-671b655eb597",
+      "message_id": "e73cfce2-6b15-4df9-b9dd-8286e1f58c06",
+      "timestamp": "2024-02-14T13:15:46.693Z",
+      "ttl": "PT60S",
+      "location": {
+        "country": {
+          "code": "IND"
+        },
+        "city": {
+          "code": "*"
+        }
+      },
+      "version": "2.0.0"
+    },
+    "message": {
+      "issue": {
+        "id": "IGM_D5Y0K6",
+        "category": "FULFILMENT",
+        "sub_category": "FLM01",
+        "issue_type": "ISSUE",
+        "status": "OPEN",
+        "created_at": "2024-02-14T13:15:46.693Z",
+        "complainant_info": {
+          "person": {
+            "name": "abrar qureshi"
+          },
+          "contact": {
+            "phone": "9021718595",
+            "email": "abrar@gmail.com"
+          }
+        },
+        "order_details": {
+          "id": "99767c81-0a0f-4c7a-ac6a-b7778c7af730",
+          "state": "DISBURSED",
+          "provider_id": "6a58b3e7-6c4b-4987-b7b5-62fbc4dec263"
+        },
+        "description": {
+          "short_desc": "Delay in disbursement/not disbursed",
+          "long_desc": "Loan not disbursed by the lender",
+          "additional_desc": {
+            "url": "https://buyerapp.com/additonal-details/desc.txt",
+            "content_type": "text/plain"
+          },
+          "images": [
+            "https://storage.googleapis.com/openfinance/IGM_B6AEUI/98a9407b-f420-4a53-bcee-b016acac0579-Scc.png",
+            "https://storage.googleapis.com/openfinance/IGM_B6AEUI/98a9407b-f420-4a53-bcee-b016acac0579-Scc.png"
+          ]
+        },
+        "source": {
+          "network_participant_id": "pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp1",
+          "type": "CONSUMER"
+        },
+        "expected_response_time": {
+          "duration": "PT2H"
+        },
+        "expected_resolution_time": {
+          "duration": "P1D"
+        }
+      }
+    }
+  },
+  "issue_response": {
+    "context": {
+      "domain": "ONDC:FIS12",
+      "action": "on_issue",
+      "bap_id": "pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp1",
+      "bap_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/adaptor-v2/adp1/",
+      "bpp_id": "preprodfiu.pirimidtech.com",
+      "bpp_uri": "https://preprodfiu.pirimidtech.com:8880/lender-bridge/ondc/kbl-uat",
+      "transaction_id": "0fbca2b3-eb1d-4e96-b385-671b655eb597",
+      "message_id": "e73cfce2-6b15-4df9-b9dd-8286e1f58c06",
+      "timestamp": "2024-02-14T13:15:47.357Z",
+      "ttl": "PT60S",
+      "location": {
+        "country": {
+          "code": "IND"
+        },
+        "city": {
+          "code": "*"
+        }
+      },
+      "version": "2.0.0"
+    },
+    "message": {
+      "issue": {
+        "id": "IGM_D5Y0K6",
+        "created_at": "2024-02-14T13:15:47.350Z",
+        "updated_at": "2024-02-14T13:15:47.350Z",
+        "issue_actions": {
+          "respondent_actions": [
+            {
+              "respondent_action": "PROCESSING",
+              "short_desc": "support team is processing the issue",
+              "updated_at": "2024-02-14T13:15:47.352Z",
+              "updated_by": {
+                "org": {
+                  "name": "Karnataka Bank"
+                },
+                "contact": {
+                  "phone": "18004251444",
+                  "email": "info@ktkbank.com"
+                },
+                "person": {
+                  "name": "Karnataka Bank"
+                }
+              },
+              "cascaded_level": "1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "categories": [
+    {
+      "category": "FULFILLMENT",
+      "industryCategory": "DISBURSEMENT",
+      "subCategories": [
+        {
+          "subCategory": "Delay in disbursement/not disbursed",
+          "illustration": "Loan not disbursed by the lender",
+          "subCatCode": 1,
+          "enumValue": "FLM01"
+        },
+        {
+          "subCategory": "Incorrect amount disbursed",
+          "illustration": "Loan disbursed is incorrect amount",
+          "subCatCode": 2,
+          "enumValue": "FLM02"
+        }
+      ]
+    },
+    {
+      "category": "PAYMENT",
+      "industryCategory": "PAYMENTS",
+      "subCategories": [
+        {
+          "subCategory": "EMI not executed",
+          "illustration": "EMI not deducted",
+          "subCatCode": 1,
+          "enumValue": "PMT01"
+        },
+        {
+          "subCategory": "EMI wrongly executed",
+          "illustration": "Incorrect amount debited against the EMI",
+          "subCatCode": 2,
+          "enumValue": "PMT02"
+        },
+        {
+          "subCategory": "EMI wrongly executed",
+          "illustration": "EMI deducted twice",
+          "subCatCode": 3,
+          "enumValue": "PMT03"
+        },
+        {
+          "subCategory": "EMI wrongly executed",
+          "illustration": "Automatic debits not canceled after loan closure",
+          "subCatCode": 4,
+          "enumValue": "PMT04"
+        },
+        {
+          "subCategory": "EMI payment not getting reflected",
+          "illustration": "Issues with payment receipts and acknowledgment",
+          "subCatCode": 5,
+          "enumValue": "PMT05"
+        },
+        {
+          "subCategory": "Preclosure/Part payment related",
+          "illustration": "Unable to prepay or make partpay",
+          "subCatCode": 6,
+          "enumValue": "PMT06"
+        },
+        {
+          "subCategory": "Preclosure/Part payment related",
+          "illustration": "Prepayment not reflecting in loan summary",
+          "subCatCode": 7,
+          "enumValue": "PMT07"
+        },
+        {
+          "subCategory": "Preclosure/Part payment related",
+          "illustration": "Incorrect fees charged even during the cool-off period",
+          "subCatCode": 8,
+          "enumValue": "PMT08"
+        },
+        {
+          "subCategory": "NOC/Loan completion Related",
+          "illustration": "Loan completion certificate/NOC not received after full payment",
+          "subCatCode": 9,
+          "enumValue": "PMT09"
+        }
+      ]
+    },
+    {
+      "category": "INTEREST & CHARGES",
+      "industryCategory": "RoI related issues",
+      "subCategories": [
+        {
+          "subCategory": "RoI related issues",
+          "subCatCode": 9,
+          "enumValue": "PTM09"
+        },
+        {
+          "subCategory": "Fees/Charges related issues",
+          "illustration": "Interest to be charged as per initial loan offer was 18% however the final loan agreement has 20% mentioned",
+          "subCatCode": 10,
+          "enumValue": "PTM10"
+        }
+      ]
+    },
+    {
+      "category": "ORDER",
+      "industryCategory": "GENERIC",
+      "subCategories": [
+        {
+          "subCategory": "Cibil Related",
+          "illustration": "Incorrect info on the credit report",
+          "subCatCode": 1,
+          "enumValue": "ORD01"
+        },
+        {
+          "subCategory": "Cibil Related",
+          "illustration": "unauthorized inquiry",
+          "subCatCode": 2,
+          "enumValue": "GEN02"
+        },
+        {
+          "subCategory": "Cibil Related",
+          "illustration": "delay in updating payment information",
+          "subCatCode": 2,
+          "enumValue": "ORD02"
+        },
+        {
+          "subCategory": "Loan Servicing",
+          "illustration": "Missing or lost loan documents",
+          "subCatCode": 3,
+          "enumValue": "ORD03"
+        },
+        {
+          "subCategory": "Loan Servicing",
+          "illustration": "Errors in loan agreements or contracts",
+          "subCatCode": 4,
+          "enumValue": "ORD04"
+        }
+      ]
+    }
+  ]
+}

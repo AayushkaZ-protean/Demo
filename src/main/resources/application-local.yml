@@ -1,0 +1,29 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /openfinance
+
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    #url: jdbc:postgresql://172.21.10.237:5432/openfinance
+    url: jdbc:postgresql://localhost:5432/openfinance
+    username: postgres
+    password: postgress
+  jpa:
+    hibernate:
+      #ddl-auto: update
+
+twilio:
+  account-id: AC11b47d2a6cc635641393b915ea73d356
+  account-secret: 5f2131eb498059845f4366ee6cc11dcc
+  sender-phone-no: +14124246427
+
+lsp:
+  consent-request :
+    header:
+      rid: 445e7f8c-22eb-4c09-b6d9-677ef59dbc29
+      channel-id: finsense
+    body:
+      lsp-id : loanseva
