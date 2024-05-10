@@ -1,0 +1,1 @@
+release/openfinance-1.0.9.jar filter=lfs diff=lfs merge=lfs -text
