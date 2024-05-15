@@ -4,7 +4,7 @@ pipeline {
         stage("Clone Git Repository") {
             steps  {
                     git(
-                        url: "https://github.com/AayushkaZ-protean/Demo.git",
+                        url: "",
                         branch: "main",
                         changelog: true,
                         poll: true
